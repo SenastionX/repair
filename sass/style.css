@@ -427,6 +427,49 @@ template {
   width: 100%;
 }
 
+.form-manage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 20px;
+  font-family: 'Museo Sans Light', sans-serif;
+}
+
+.form-manage_connect {
+  max-width: 251px;
+}
+
+.form-manage_call {
+  margin-right: 80px;
+}
+
+.form-manage_person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-manage_tell {
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-decoration: none;
+  color: #333333;
+}
+
+.form-manage_img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+  background: url("../img/feedback/tel.png") no-repeat center;
+}
+
 .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
