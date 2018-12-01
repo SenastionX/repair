@@ -10,9 +10,18 @@
 @media (max-width: 1199px)
   .container
     width: 90%  
+  .form
+    width: 455px
+    &:before 
+      width: 500px
 @media (max-width: 992px)
   .container
     width: 95%
+  .form
+    width: 425px
+    &:before 
+      width: 420px
+  
   .main
     &-text
       &__title
@@ -20,9 +29,11 @@
         line-height: 36px
   .feedback
     background: #fff
-@media (max-width: 768px)
+@media (max-width: 860px)
     .feedback_img
       display: none
+    .form
+      margin-left: 22%
     .hidden-xs
       display: none
     .container
@@ -35,6 +46,11 @@
         margin: auto
         &__title
           text-align: center
+      &-advantages
+        margin-left: 15%
+@media (max-width: 660px)
+  .form
+    margin-left: 19%
 @media (max-width: 576px)
   .conteiner
     width: 95%
@@ -42,8 +58,9 @@
     display: none
   .header
     &-text
+      width: 350px
       &__phone
-        font-size: 12px
+        font-size: 15px
     .container
       flex-direction: column
       max-width: 320px
@@ -53,6 +70,7 @@
         font-size: 26px
         line-height: 26px
   .form
+    align-items: center
     width: 320px
     text-align: center
     &:before 
@@ -70,7 +88,15 @@
       margin-left: 8%
       width: 270px
       height: 71px
-
+@media (max-width: 450px)
+  .form
+    margin-left: 10%
+  .header
+    &-text
+      width: 326px
+@media (max-width: 390px)
+  .form
+    margin-left: 0%
 
 
 
