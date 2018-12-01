@@ -1,9 +1,31 @@
 .feedback
-    padding: 94px 0
-    background: url('../img/feedback/feedback-bg.jpg') no-repeat center right -40%
+
+
+.feedback_img  
+    background-image: url('../img/feedback/feedback-bg.jpg')
+    max-width: 845px
+    height: 595px
+    margin-left: 55%
+    z-index: 0
 
 .form
-    max-width: 575px
+    width: 575px
+    height: 595px
+    float: left
+    background-size: contain
+    position: relative 
+    z-index: 1
+    &:before
+        content: ''
+        left: 0
+        top: 0
+        width: 575px
+        height: 595px
+        background-color: #fff 
+        z-index: -1
+        position: absolute
+
+
     &__title
         font-size: 24px
         font-family: 'Museo Sans Bold', sans-serif 
@@ -15,6 +37,7 @@
     &__input
         width: 270px
         margin-bottom: 30px
+        outline: none
         &:first-child
             margin-right: 30px
     &__button

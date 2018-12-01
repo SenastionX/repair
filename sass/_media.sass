@@ -1,0 +1,77 @@
+@media (min-width: 1200px)
+
+  .form
+    margin-left: 0
+  .feedback_img 
+    margin-left: 54%
+    margin-right: 0%
+
+
+@media (max-width: 1199px)
+  .container
+    width: 90%  
+@media (max-width: 992px)
+  .container
+    width: 95%
+  .main
+    &-text
+      &__title
+        font-size: 30px
+        line-height: 36px
+  .feedback
+    background: #fff
+@media (max-width: 768px)
+    .feedback_img
+      display: none
+    .hidden-xs
+      display: none
+    .container
+      width: 95%
+    .main
+      &-wrap
+        flex-direction: column
+      &-text
+        max-width: 480px
+        margin: auto
+        &__title
+          text-align: center
+@media (max-width: 576px)
+  .conteiner
+    width: 95%
+  .hidden-s
+    display: none
+  .header
+    &-text
+      &__phone
+        font-size: 12px
+    .container
+      flex-direction: column
+      max-width: 320px
+  .main
+    &-text
+      &__title
+        font-size: 26px
+        line-height: 26px
+  .form
+    width: 320px
+    text-align: center
+    &:before 
+      width: 320px
+    
+    &__input:first-child
+      margin-right: 0
+    &-manage
+      flex-direction: column
+      &_call 
+        margin: 0 0 0 8% 
+      &_person
+        margin: 0 0 0 8% 
+    &__button
+      margin-left: 8%
+      width: 270px
+      height: 71px
+
+
+
+
+
