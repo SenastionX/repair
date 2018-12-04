@@ -20,7 +20,7 @@
                     <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
                 </div>
                 <div class="header-text__button">
-                    <button class="button">Перезвоните <span class="hidden-xs">мне</span></button>
+                    <button class="button" id="button-callback">Перезвоните <span class="hidden-xs">мне</span></button>
                 </div>
             </div>
         </div>
@@ -32,20 +32,20 @@
                 <div class="main-text">
                     <h1 class="main-text__title">Внутренняя отделка помещений "под ключ"
                         <span>с гарантией качества, прописанной в&nbsp;договоре</span></h1>
-                    <div class="div main-advantages">
-                        <div class="main-advantages__item">
-                            <div class="main-advantages__img main-advantages__img-1"></div>
-                            <div class="main-advantages__text">Точно соблюдаем сроки</div>
+                    <div class="div main-scroll">
+                        <div class="main-scroll__item">
+                            <div class="main-scroll__img main-scroll__img-1"></div>
+                            <div class="main-scroll__text">Точно соблюдаем сроки</div>
                         </div>
                         <!--main-advatages__item-->
-                        <div class="main-advantages__item">
-                            <div class="main-advantages__img main-advantages__img-2"></div>
-                            <div class="main-advantages__text">Рассчитаем смету на работы и материалы в день обращения</div>
+                        <div class="main-scroll__item">
+                            <div class="main-scroll__img main-scroll__img-2"></div>
+                            <div class="main-scroll__text">Рассчитаем смету на работы и материалы в день обращения</div>
                         </div>
                         <!--main-advatages__item-->
-                        <div class="main-advantages__item">
-                            <div class="main-advantages__img main-advantages__img-3"></div>
-                            <div class="main-advantages__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</div>
+                        <div class="main-scroll__item">
+                            <div class="main-scroll__img main-scroll__img-3"></div>
+                            <div class="main-scroll__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</div>
                         </div>
                         <!--main-advatages__item-->
                     </div>
@@ -78,6 +78,138 @@
         </div>
         <div class="feedback_img"></div>
     </div>
+
+    <div class="modal modal_hidden" id="modal-callback">
+        <div class="modal_dialog">
+            <div class="modal_close">&#10006;</div>
+            <div class="modal_content">
+
+                <div class="modal_wrap">
+                    <div class="modal-img"><img src="/img/bg1.png" alt="">
+                        <div class="modal-text_link">
+                            <span_1>Ванная комната<br>
+                                <hr>
+                            </span_1>
+                            <span_2>135*150 -</span_2>
+                            <span_3> 31 000 руб. <br></span_3>
+                            <span_2>170*170 -</span_2>
+                            <span_3> 43 000 руб.</span_3>
+                        </div>
+
+                    </div>
+                    <div class="modal-img"><img src="/img/bg2.png" alt="">
+                        <div class="modal-text_link">
+                            <span_1>Туалет<br>
+                                <hr>
+                            </span_1>
+                            <span_2>135*70 -</span_2>
+                            <span_3> 14 000 руб. <br></span_3>
+                        </div>
+
+                    </div>
+                    <div class="modal-img"><img src="/img/bg3.png" alt="">
+                        <div class="modal-text_link">
+                            <span_1>Совмещенный санузел<br>
+                                <hr>
+                            </span_1>
+                            <span_2>170*210 -</span_2>
+                            <span_3> 54 000 руб. <br></span_3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="modal-vault">
+                        <div class="modal-header">В стоимость работ входит</div>
+
+                        <div class="modal-scroll">
+                            <div class="modal-scroll_item">
+                                <div class="modal-scroll_img"></div>
+                                <div class="modal-scroll_text">
+                                    Демонтаж старого покрытия стен и пола
+                                </div>
+                            </div>
+                            <div class="modal-scroll_item">
+                                <div class="modal-scroll_img"></div>
+                                <div class="modal-scroll_text">
+                                    Выравнивание стен гипсовыми составами
+                                </div>
+                            </div>
+                            <div class="modal-scroll_item">
+                                <div class="modal-scroll_img"></div>
+                                <div class="modal-scroll_text">
+                                    Грунтовка стен и пола антисептиком, бетоноконтактом
+                                </div>
+                            </div>
+                            <div class="modal-scroll_item">
+                                <div class="modal-scroll_img"></div>
+                                <div class="modal-scroll_text">
+                                    Монтаж кафельной плитки на полу и стенах
+                                </div>
+                            </div>
+                            <div class="modal-scroll_item">
+                                <div class="modal-scroll_img"></div>
+                                <div class="modal-scroll_text">
+                                    Установка реечного или натяжного потолка, светильников
+                                </div>
+                            </div>
+                            <div class="modal-scroll_item">
+                                <div class="modal-scroll_img"></div>
+                                <div class="modal-scroll_text">
+                                    Монтаж двери с коробкой
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal_contacts">
+                <div class="modal_form">
+                    <h2 class="modal_title">Узнайте точную стоимость<br> ремонта по телефону!
+                    </h2>
+                    <span class="modal_subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                    <form action="#">
+                        <input type="text" class="input input-name modal_input" placeholder="Ваше имя">
+                        <input type="text" class="input input-name modal_input" placeholder="Ваш телефон">
+                        <button type="submit" class="button modal_button">Узнать стоимость </button>
+                    </form>
+
+                    <div class="modal-footer">
+                        <div class="modal-footer_item">
+                            <div class="modal-footer_text">
+                                Или Вы можете перезвонить нам сами <br> по телефону:
+
+                                <a class="modal-text_tel" href="tel: +7 (8182) 42-51-31">+7 (8182) 42-51-31</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#button-callback').on('click', function() {
+                $('#modal-callback').removeClass('modal_hidden');
+                $('#modal-callback').addClass('modal_visible');
+            });
+            $('.modal_close').on('click', function() {
+                $('.modal').removeClass('modal_visible');
+                $('.modal').addClass('modal_hidden');
+            })
+        });
+    </script>
+
+
+
 </body>
 
 </html>

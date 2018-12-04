@@ -14,6 +14,11 @@
     width: 455px
     &:before 
       width: 500px
+  .modal
+    &_dialog
+      width: 990px
+    &_wrap
+      width: 450px
 @media (max-width: 992px)
   .container
     width: 95%
@@ -21,7 +26,18 @@
     width: 425px
     &:before 
       width: 420px
-  
+  .modal
+    &_dialog
+      width: 790px
+    &_content
+      width: 370px
+    &-img
+      margin-left: 10px
+    &-header
+      margin-left: 10px
+    &-scroll
+      &_img
+        margin-left: 10px
   .main
     &-text
       &__title
@@ -39,6 +55,8 @@
     .container
       width: 95%
     .main
+      &-img
+        display: none
       &-wrap
         flex-direction: column
       &-text
@@ -48,10 +66,31 @@
           text-align: center
       &-advantages
         margin-left: 15%
+    .modal
+      &_dialog
+        width: 745px
+      &_content
+        width: 355px
+@media (max-width: 750px)
+  .modal
+    &_content
+      display: none
+    &_contacts
+      width: 570px
+    &_dialog
+      width: 570px
+
+
 @media (max-width: 660px)
+
   .form
     margin-left: 18%
 @media (max-width: 576px)
+  .modal
+    &_contacts
+      width: 440px
+    &_dialog
+      width: 440px
   .conteiner
     width: 95%
   .hidden-s
@@ -89,6 +128,15 @@
       width: 270px
       height: 71px
 @media (max-width: 450px)
+  .modal
+    &_contacts
+      width: 370px
+    &_dialog
+      width: 370px
+    &_button
+      width: 250px
+    &_input
+      width: 250px
   .form
     margin-left: 10%
   .header
@@ -98,6 +146,13 @@
         font-size: 15px
     
 @media (max-width: 390px)
+  .modal
+    &_contacts
+      width: 310px
+    &_dialog
+      width: 310px
+    &_title
+      margin-top: 50px
   .form
     margin-left: 0%
   .header 
@@ -110,3 +165,4 @@
         text-align: center
         margin-right: 0%
         margin-bottom: 10px
+
