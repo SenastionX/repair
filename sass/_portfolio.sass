@@ -1,0 +1,50 @@
+.portfolio
+    .container
+        position: relative
+        z-index: 1
+        &:before
+            content: ""
+            position: absolute
+            top: -110px
+            right: 466px
+            width: 100%
+            height: calc(100% + 290px)
+            background-repeat: repeat
+            background-image: url("../img/portfolio/portfolio_bg.png")
+            z-index: -1
+ 
+
+.portfolio
+    position: relative
+    padding: 90px 0 185px
+    text-align: center
+    background-color: #f5f5f5
+    &__title
+        margin-bottom: 92px
+        &-slider
+            right: -20px
+            text-align: center
+            margin: auto
+            &__item 
+                margin: auto
+                height: 280px
+                img
+                    max-width: 95%
+
+
+.arrow
+  position: absolute
+  bottom: -87px
+  left: 50%
+  width: 45px
+  height: 19px
+  cursor: pointer
+  &_left
+      transform: translateX(-45px)
+      margin-left: -29px
+      background: url("../img/portfolio/arrow-left.png") no-repeat center
+      background-size: 100%
+  &_right 
+      transform: translateX(1px)
+      background: url("../img/portfolio/arrow-right.png") no-repeat center
+      background-size: 100%

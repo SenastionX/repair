@@ -19,6 +19,10 @@
       width: 990px
     &_wrap
       width: 450px
+  .slider
+    &__item
+      img
+        max-width: 95%
 @media (max-width: 992px)
   .container
     width: 95%
@@ -45,6 +49,7 @@
         line-height: 36px
   .feedback
     background: #fff
+    height: 650px
 @media (max-width: 860px)
     .feedback_img
       display: none
@@ -71,6 +76,10 @@
         width: 745px
       &_content
         width: 355px
+    .portfolio
+      .container
+        &:before
+          position: relative
 @media (max-width: 750px)
   .modal
     &_content
@@ -86,6 +95,11 @@
   .form
     margin-left: 18%
 @media (max-width: 576px)
+  .slider
+    &__item
+      margin-left: 70px
+  .feedback
+    height: 700px
   .modal
     &_contacts
       width: 440px
@@ -128,6 +142,9 @@
       width: 270px
       height: 71px
 @media (max-width: 450px)
+  .slider
+    &__item
+      margin-left: 40px
   .modal
     &_contacts
       width: 370px
@@ -146,6 +163,9 @@
         font-size: 15px
     
 @media (max-width: 390px)
+  .slider
+    &__item
+      margin-left: 20px
   .modal
     &_contacts
       width: 310px

@@ -520,7 +520,7 @@ template {
   background-image: url("../img/feedback/feedback-bg.jpg");
   max-width: 845px;
   height: 595px;
-  margin-left: 55%;
+  margin-left: 56%;
   z-index: 0;
 }
 
@@ -614,6 +614,73 @@ template {
   border: 2px solid #cccccc;
   border-radius: 50%;
   background: url("../img/feedback/tel.png") no-repeat center;
+}
+
+.portfolio .container {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio .container:before {
+  content: "";
+  position: absolute;
+  top: -110px;
+  right: 466px;
+  width: 100%;
+  height: calc(100% + 290px);
+  background-repeat: repeat;
+  background-image: url("../img/portfolio/portfolio_bg.png");
+  z-index: -1;
+}
+
+.portfolio {
+  position: relative;
+  padding: 90px 0 185px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.portfolio__title {
+  margin-bottom: 92px;
+}
+
+.portfolio__title-slider {
+  right: -20px;
+  text-align: center;
+  margin: auto;
+}
+
+.portfolio__title-slider__item {
+  margin: auto;
+  height: 280px;
+}
+
+.portfolio__title-slider__item img {
+  max-width: 95%;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -87px;
+  left: 50%;
+  width: 45px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.arrow_left {
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+  margin-left: -29px;
+  background: url("../img/portfolio/arrow-left.png") no-repeat center;
+  background-size: 100%;
+}
+
+.arrow_right {
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+  background: url("../img/portfolio/arrow-right.png") no-repeat center;
+  background-size: 100%;
 }
 
 .modal {
@@ -855,6 +922,9 @@ img {
   .modal_wrap {
     width: 450px;
   }
+  .slider__item img {
+    max-width: 95%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -888,6 +958,7 @@ img {
   }
   .feedback {
     background: #fff;
+    height: 650px;
   }
 }
 
@@ -929,6 +1000,9 @@ img {
   .modal_content {
     width: 355px;
   }
+  .portfolio .container:before {
+    position: relative;
+  }
 }
 
 @media (max-width: 750px) {
@@ -950,6 +1024,12 @@ img {
 }
 
 @media (max-width: 576px) {
+  .slider__item {
+    margin-left: 70px;
+  }
+  .feedback {
+    height: 700px;
+  }
   .modal_contacts {
     width: 440px;
   }
@@ -1012,6 +1092,9 @@ img {
 }
 
 @media (max-width: 450px) {
+  .slider__item {
+    margin-left: 40px;
+  }
   .modal_contacts {
     width: 370px;
   }
@@ -1036,6 +1119,9 @@ img {
 }
 
 @media (max-width: 390px) {
+  .slider__item {
+    margin-left: 20px;
+  }
   .modal_contacts {
     width: 310px;
   }
