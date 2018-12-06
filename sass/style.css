@@ -588,7 +588,7 @@ template {
 }
 
 .form-manage_call {
-  margin-right: 80px;
+  margin-right: 50px;
 }
 
 .form-manage_person {
@@ -608,7 +608,7 @@ template {
 }
 
 .form-manage_img {
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   margin-right: 20px;
   border: 2px solid #cccccc;
@@ -635,7 +635,7 @@ template {
 
 .portfolio {
   position: relative;
-  padding: 90px 0 185px;
+  padding: 90px 0 180px;
   text-align: center;
   background-color: #f5f5f5;
 }
@@ -647,7 +647,6 @@ template {
 .portfolio__title-slider {
   right: -20px;
   text-align: center;
-  margin: auto;
 }
 
 .portfolio__title-slider__item {
@@ -681,6 +680,170 @@ template {
           transform: translateX(1px);
   background: url("../img/portfolio/arrow-right.png") no-repeat center;
   background-size: 100%;
+}
+
+.profile {
+  background-color: #f5f5f5;
+  height: 660px;
+}
+
+.profile-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.profile-block {
+  margin: auto;
+  width: 90%;
+}
+
+.profile-part_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../img/profile/bg.png") no-repeat;
+  height: 660px;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.profile .field {
+  height: 660px;
+  max-width: 370px;
+  margin: auto;
+  width: 90%;
+}
+
+.profile .field_title {
+  margin: 0;
+  margin-top: 110px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 33px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.profile .field_subtitle {
+  margin-bottom: 55px;
+  display: block;
+  font-size: 16px;
+  font-family: 'Museo Sans Light', sans-serif;
+  text-align: center;
+}
+
+.profile .field_input {
+  width: 100%;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.profile .field_input:first-child {
+  margin-right: 30px;
+}
+
+.profile .field_button {
+  margin-top: 15px;
+  padding: 28px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+
+.profile .field-advantages_text {
+  max-width: 370px;
+  font-size: 15px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.profile-part_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../img/profile/bgbg.png") no-repeat;
+  height: 660px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.profile-text {
+  margin: 0;
+}
+
+.profile-text_title {
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  margin-bottom: 50px;
+}
+
+.profile-text_title span {
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  font-family: 'Museo Sans Light', sans-serif;
+}
+
+.profile-advantages {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+}
+
+.profile-advantages_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  min-width: 240px;
+}
+
+.profile-advantages_text {
+  max-width: 370px;
+  font-size: 15px;
+  font-family: 'Museo Sans Medium', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.profile-advantages_img-1 {
+  background-image: url("../img/profile/bg-1.png");
+  width: 35px;
+  height: 35px;
+}
+
+.profile-advantages_img-2 {
+  background-image: url("../img/profile/bg-2.png");
+  width: 35px;
+  height: 35px;
+}
+
+.profile-advantages_img-3 {
+  background-image: url("../img/profile/bg-3.png");
+  width: 35px;
+  height: 35px;
+}
+
+.profile-advantages_img-4 {
+  background-image: url("../img/profile/bg-4.png");
+  width: 35px;
+  height: 35px;
+}
+
+.profile-advantages_img {
+  margin-right: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .modal {
@@ -904,6 +1067,10 @@ img {
     margin-left: 54%;
     margin-right: 0%;
   }
+  .profilefield {
+    margin: auto;
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -928,11 +1095,22 @@ img {
 }
 
 @media (max-width: 992px) {
+  .profile-part_2 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
   .container {
     width: 95%;
   }
   .form {
     width: 425px;
+  }
+  .form__title {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
   }
   .form:before {
     width: 420px;
@@ -958,11 +1136,18 @@ img {
   }
   .feedback {
     background: #fff;
-    height: 650px;
+    height: 596px;
   }
 }
 
 @media (max-width: 860px) {
+  .profile-part_1 {
+    display: none;
+  }
+  .profile-part_2 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .feedback_img {
     display: none;
   }
@@ -992,7 +1177,7 @@ img {
     text-align: center;
   }
   .main-advantages {
-    margin-left: 15%;
+    margin: auto;
   }
   .modal_dialog {
     width: 745px;
@@ -1056,7 +1241,7 @@ img {
     max-width: 320px;
   }
   .main-text__title {
-    font-size: 26px;
+    font-size: 27px;
     line-height: 26px;
   }
   .form {
@@ -1082,7 +1267,10 @@ img {
     margin: 0 0 0 8%;
   }
   .form-manage_person {
-    margin: 0 0 0 8%;
+    margin: 0 0 0 17%;
+  }
+  .form-manage_img {
+    display: none;
   }
   .form__button {
     margin-left: 8%;
@@ -1116,9 +1304,15 @@ img {
   .header-text__phone {
     font-size: 15px;
   }
+  .main-text__title {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 390px) {
+  .profile .field_title {
+    margin-top: 50px;
+  }
   .slider__item {
     margin-left: 20px;
   }
@@ -1133,6 +1327,9 @@ img {
   }
   .form {
     margin-left: 0%;
+  }
+  .form__title {
+    font-size: 19px;
   }
   .header-text {
     -webkit-box-orient: vertical;

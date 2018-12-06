@@ -5,6 +5,11 @@
   .feedback_img 
     margin-left: 54%
     margin-right: 0%
+  .profile
+    &field
+      margin: auto
+      margin-left: 0px
+
 
 
 @media (max-width: 1199px)
@@ -24,10 +29,18 @@
       img
         max-width: 95%
 @media (max-width: 992px)
+  .profile
+    &-part_2
+      flex-basis: 48%
   .container
     width: 95%
   .form
     width: 425px
+    &__title
+      margin-bottom: 30px
+      font-size: 22px
+    &__subtitle
+      margin-bottom: 30px
     &:before 
       width: 420px
   .modal
@@ -49,8 +62,13 @@
         line-height: 36px
   .feedback
     background: #fff
-    height: 650px
+    height: 596px
 @media (max-width: 860px)
+    .profile
+      &-part_1
+        display: none
+      &-part_2
+        flex-basis: 100%
     .feedback_img
       display: none
     .form
@@ -70,7 +88,7 @@
         &__title
           text-align: center
       &-advantages
-        margin-left: 15%
+        margin: auto
     .modal
       &_dialog
         width: 745px
@@ -120,7 +138,7 @@
   .main
     &-text
       &__title
-        font-size: 26px
+        font-size: 27px
         line-height: 26px
   .form
     align-items: center
@@ -136,7 +154,9 @@
       &_call 
         margin: 0 0 0 8% 
       &_person
-        margin: 0 0 0 8% 
+        margin: 0 0 0 17% 
+      &_img
+        display: none
     &__button
       margin-left: 8%
       width: 270px
@@ -161,8 +181,16 @@
       width: 350px
       &__phone
         font-size: 15px
+  .main
+    &-text
+      &__title
+        font-size: 25px
     
 @media (max-width: 390px)
+  .profile
+    .field
+      &_title
+        margin-top: 50px
   .slider
     &__item
       margin-left: 20px
@@ -175,6 +203,8 @@
       margin-top: 50px
   .form
     margin-left: 0%
+    &__title
+      font-size: 19px
   .header 
     &-text
       flex-direction: column
